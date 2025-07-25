@@ -52,7 +52,7 @@ p{
   -o-transition: background-color 0.5s;
 }
 
-.btn-outline.primary{
+.btn-outline-primary{
   color: var(--primary);
   background-color: var(--white);
   border: 1px solid var(--primary);
@@ -69,7 +69,7 @@ p{
   border: 1px solid var(--primary);
 }
 
-.btn-prim.primary:hoover{
+.btn-primary:hoover{
   color: var(--primary);
   background-color: var(--white);
 } 
@@ -86,7 +86,7 @@ p{
   gap: 16px;
 }
 
--btn-github:hover{
+.btn-github:hover{
   color: var(--github);
   background-color: var(--white);
 }
@@ -164,6 +164,49 @@ h3{
 }
 
 /* Titles ends */
+
+/* Navbar Style Start */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 85.333px;
+  background: var(--white);
+  box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar--items > ul {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  gap: 42.667px;
+  text-decoration: none;
+}
+
+.navbar--items ul > li > a {
+  text-decoration: none;
+}
+
+/* Navbar Content */
+.navbar--content {
+  color: var(--darkblue);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.navbar--active-content {
+  color: var(--primary);
+}
+/* Navbar Styler Ends */
+
 
 /* Hero Section Style */
 
