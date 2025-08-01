@@ -1,0 +1,25 @@
+{
+    "portfolio": [
+        {
+        "id": "1",
+        "src": "./img/placeholder-image.png",
+        "title": "Contact Agenda",
+        "description": "CRUD construido en .NET, no hay mucho para ver esto lo hace una IA de takito ",
+        "link": "View In Github"
+        },
+        {
+        "id": "2",
+        "src": "./img/placeholder-image-1.png",
+        "title": "TEST 2",
+        "description": "Aca pondrio otro proyecto, SI TU VIERA UNO!!!",
+        "link": "View In Github"
+        },
+        {
+        "id": "3",
+        "src": "./img/placeholder-image-2.png",
+        "title": "TEST 3",
+        "description": "Aca pondrio otro proyecto, SI TU VIERA UNO!!!",
+        "link": "View In Github"
+        }
+    ]
+}
