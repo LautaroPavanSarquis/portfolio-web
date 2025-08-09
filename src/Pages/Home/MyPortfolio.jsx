@@ -9,16 +9,21 @@ export default function MyPortfolio() {
           <h2 className="section--heading">My Portfolio</h2>
         </div>
         <div>
-          <button className="btn btn-primary">
+          <a 
+            href="https://github.com/LautaroPavanSarquis" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="btn btn-primary"
+          >
             <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                style={{ marginRight: "8px" }}
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              style={{ marginRight: "8px" }}
             >
-                <path
+              <path
                 fillRule="evenodd"
                 clipRule="evenodd"
                 d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.113.793-.26.793-.577
@@ -28,10 +33,10 @@ export default function MyPortfolio() {
                 c1.018.005 2.042.138 3.003.403 2.29-1.552 3.297-1.23 3.297-1.23.655 1.653.243 2.873.12 3.176.77.84
                 1.235 1.912 1.235 3.222 0 4.61-2.807 5.624-5.48 5.92.43.37.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286
                 0 .319.192.694.8.576C20.565 21.796 24 17.297 24 12c0-6.63-5.37-12-12-12z"
-                />
+              />
             </svg>
             Visit My GitHub
-            </button>
+          </a>
         </div>
       </div>
       <div className="portfolio--section--container">
@@ -45,7 +50,12 @@ export default function MyPortfolio() {
                 <h3 className="portfolio--section--title">{item.title}</h3>
                 <p className="text-md">{item.description}</p>
               </div>
-              <p className="text-sm portfolio--link">
+              <a 
+                href={item.url} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-sm portfolio--link"
+              >
                 {item.link}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -57,12 +67,12 @@ export default function MyPortfolio() {
                   <path
                     d="M4.66667 1.66675H18V15.0001M18 1.66675L2 17.6667L18 1.66675Z"
                     stroke="currentColor"
-                    stroke-width="2.66667"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2.66667"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
-              </p>
+              </a>
             </div>
           </div>
         ))}
