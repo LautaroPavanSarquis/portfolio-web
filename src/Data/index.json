@@ -5,7 +5,8 @@
         "src": "./img/placeholder-image.png",
         "title": "Contact Agenda",
         "description": "CRUD construido en .NET, no hay mucho para ver esto lo hace una IA de takito ",
-        "link": "View In Github"
+        "link": "View In Github",
+        "url": "https://github.com/LautaroPavanSarquis/Practice-CRUD---Agenda-Contactos"
         },
         {
         "id": "2",
