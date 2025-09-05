@@ -1,18 +1,23 @@
+import { useContext } from "react";
+import { LanguageContext } from "../../App";
 import data from "../../Data/index.json";
 
 export default function MyPortfolio() {
+  const { lang } = useContext(LanguageContext);
+
   return (
     <section className="portfolio--section" id="MyPortfolio">
       <div className="portfolio--container-box">
         <div className="portfolio--container">
-          <p className="sub--title">Recent Projects</p>
-          <h2 className="section--heading">My Portfolio</h2>
+          <h2 className="section--heading">
+            {lang === "es" ? "Mi Portafolio" : "My Portfolio"}
+          </h2>
         </div>
         <div>
-          <a 
-            href="https://github.com/LautaroPavanSarquis" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <a
+            href="https://github.com/LautaroPavanSarquis"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn btn-primary"
           >
             <svg
@@ -35,25 +40,26 @@ export default function MyPortfolio() {
                 0 .319.192.694.8.576C20.565 21.796 24 17.297 24 12c0-6.63-5.37-12-12-12z"
               />
             </svg>
-            Visit My GitHub
+            {lang === "es" ? "Visitar mi GitHub" : "Visit My GitHub"}
           </a>
         </div>
       </div>
+
       <div className="portfolio--section--container">
         {data?.portfolio?.map((item, index) => (
           <div key={index} className="portfolio--section--card">
             <div className="portfolio--section--img">
-              <img src={item.src} alt="Placeholder" />
+              <img src={item.src} alt={item.title[lang]} />
             </div>
             <div className="portfolio--section--card--content">
               <div>
-                <h3 className="portfolio--section--title">{item.title}</h3>
-                <p className="text-md">{item.description}</p>
+                <h3 className="portfolio--section--title">{item.title[lang]}</h3>
+                <p className="text-md">{item.description[lang]}</p>
               </div>
-              <a 
-                href={item.url} 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-sm portfolio--link"
               >
                 {item.link}
