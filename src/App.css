@@ -274,7 +274,7 @@ h3{
 .lang-switch {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
   cursor: pointer;
 }
 
@@ -302,9 +302,9 @@ h3{
 }
 
 .flag-icon {
-  width: 20px;
-  height: 20px;
-  border-radius: 2px;
+  width: 24px;
+  height: 24px;
+  border-radius: 3px;
 }
 /* Navbar Styler Ends */
 
