@@ -11,7 +11,7 @@ export const LanguageContext = createContext(null);
 
 function App() {
   const [theme, setTheme] = useState("light"); // modo claro por defecto
-  const [lang, setLang] = useState("es"); // idioma por defecto
+  const [lang, setLang] = useState("en"); // idioma por defecto
 
   const toggleTheme = () => {
     setTheme((curr) => (curr === "light" ? "dark" : "light"));

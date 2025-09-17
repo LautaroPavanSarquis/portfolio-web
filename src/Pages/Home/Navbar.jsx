@@ -35,16 +35,25 @@ function Navbar() {
 
       {/* Language Switch */}
       <div className="switch lang-switch">
-        <label>{lang === "es" ? "ES" : "EN"}</label>
-        <button onClick={() => toggleLang(lang === "es" ? "en" : "es")}>
-          <img 
-            src={lang === "es" ? "/img/es.png" : "/img/en.png"} 
-            alt={lang === "es" ? "ES" : "EN"} 
-            className="flag-icon"
-          />
-        </button>
+        <img
+          src="/img/es.png"
+          alt="Español"
+          className="flag-icon"
+        />
+        <ReactSwitch
+          onChange={() => toggleLang(lang === "es" ? "en" : "es")}
+          checked={lang === "en"} // si está en inglés, toggle a la derecha
+          checkedIcon={false}
+          uncheckedIcon={false}
+          offColor="#ccc"
+          onColor="#007bff"
+        />
+        <img
+          src="/img/en.png"
+          alt="English"
+          className="flag-icon"
+        />
       </div>
-  
 
       {/* Hamburger Menu */}
       <div>
