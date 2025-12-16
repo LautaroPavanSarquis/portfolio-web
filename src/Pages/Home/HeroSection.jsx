@@ -10,14 +10,14 @@ export default function HeroSection() {
       greeting: "Hey, soy Lauta",
       title: "Full Stack Developer",
       description:
-        "Soy Backend Developer, enfocado en construir soluciones eficientes y sostenibles. Creo en las buenas prácticas, en los principios SOLID y, sobre todo, en nunca dejar de aprender.",
+        "Soy un fullstack Developer, enfocado en construir soluciones eficientes y sostenibles. Creo en las buenas prácticas, en los principios SOLID y, sobre todo, en nunca dejar de aprender.",
       button: "Contactame",
     },
     en: {
       greeting: "Hey, I'm Lauta",
       title: "Full Stack Developer",
       description:
-        "I’m a Backend Developer, focused on building efficient and sustainable solutions. I believe in best practices, SOLID principles, and above all, never stop learning.",
+        "I’m a fullstack Developer, focused on building efficient and sustainable solutions. I believe in best practices, SOLID principles, and above all, never stop learning.",
       button: "Get in touch",
     },
   };
