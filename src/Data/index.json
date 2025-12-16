@@ -1,0 +1,46 @@
+{
+  "portfolio": [
+    {
+      "id": "1",
+      "src": "./img/agenda-contactos.png",
+      "title": {
+        "es": "Agenda de Contactos",
+        "en": "Contact Agenda"
+      },
+      "description": {
+        "es": "Aplicación web para gestionar contactos, desarrollada con ASP.NET Core 8 y Entity Framework Core. Implementa un CRUD completo con validaciones en cliente y servidor, aplicando el patrón MVC y control de versiones con Git.",
+        "en": "Web application to manage contacts, built with ASP.NET Core 8 and Entity Framework Core. Implements a full CRUD with client and server validations, following the MVC pattern and version control with Git."
+      },
+      "link": "View In Github",
+      "url": "https://github.com/LautaroPavanSarquis/Practice-CRUD---Agenda-Contactos"
+    },
+    {
+      "id": "2",
+      "src": "./img/mokepon.png",
+      "title": {
+        "es": "MOKEPON !",
+        "en": "MOKEPON !"
+      },
+      "description": {
+        "es": "Pequeño juego web desarrollado con HTML, CSS y JavaScript, que permite interactuar con personajes, manejar eventos dinámicos y aplicar lógica de programación y manipulación del DOM.",
+        "en": "Small interactive web game developed with HTML, CSS, and JavaScript, allowing players to interact with characters, handle dynamic events, and apply programming logic and DOM manipulation."
+      },
+      "link": "View In Github",
+      "url": "https://github.com/LautaroPavanSarquis/Mokepon"
+    },
+    {
+      "id": "3",
+      "src": "./img/challenge-hub.png",
+      "title": {
+        "es": "Challenge Hub",
+        "en": "Challenge Hub"
+      },
+      "description": {
+        "es": "Repositorio dedicado a la resolución de challenges y ejercicios de algoritmia de plataformas como LeetCode, HackerRank y más. Incluye soluciones en C#, SQL y otros lenguajes, con un enfoque en optimización y buenas prácticas.",
+        "en": "Repository dedicated to solving algorithmic challenges and exercises from platforms like LeetCode, HackerRank, and more. Includes solutions in C#, SQL, and other languages, focusing on optimization and best practices."
+      },
+      "link": "View In Github",
+      "url": "https://github.com/LautaroPavanSarquis/challenge-hub"
+    }
+  ]
+}
