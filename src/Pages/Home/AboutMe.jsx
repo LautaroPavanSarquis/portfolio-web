@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { LanguageContext } from "../../App";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function AboutMe() {
   const { lang } = useContext(LanguageContext);

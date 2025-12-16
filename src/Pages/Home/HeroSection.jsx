@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { LanguageContext } from "../../App";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
 
 export default function HeroSection() {
   const { lang } = useContext(LanguageContext);
