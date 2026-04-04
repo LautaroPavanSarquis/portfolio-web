@@ -2,20 +2,51 @@
   "portfolio": [
     {
       "id": "1",
-      "src": "./img/agenda-contactos.png",
+      "src": "./img/bazar-api.png",
       "title": {
-        "es": "Agenda de Contactos",
-        "en": "Contact Agenda"
+        "es": "Bazar API",
+        "en": "Bazar API"
       },
       "description": {
-        "es": "Aplicación web para gestionar contactos, desarrollada con ASP.NET Core 8 y Entity Framework Core. Implementa un CRUD completo con validaciones en cliente y servidor, aplicando el patrón MVC y control de versiones con Git.",
-        "en": "Web application to manage contacts, built with ASP.NET Core 8 and Entity Framework Core. Implements a full CRUD with client and server validations, following the MVC pattern and version control with Git."
+        "es": "API REST para la gestión integral de un bazar: ventas, productos y clientes. Desarrollada con Java 17 y Spring Boot, aplica buenas prácticas de backend, testing con H2, migraciones con Flyway y CI con GitHub Actions.",
+        "en": "REST API for full bazar management: sales, products, and customers. Built with Java 17 and Spring Boot, applying backend best practices, testing with H2, Flyway migrations, and CI via GitHub Actions."
       },
+      "tags": ["Java", "Spring Boot", "Backend", "REST API", "CI/CD", "Full Stack", "SQL"],
+      "techIcons": [
+        { "label": "Java", "icon": "devicon-java-plain colored" },
+        { "label": "Spring Boot", "icon": "devicon-spring-plain colored" },
+        { "label": "PostgreSQL", "icon": "devicon-postgresql-plain colored" },
+        { "label": "Maven", "icon": "devicon-maven-plain colored" },
+        { "label": "GitHub Actions", "icon": "devicon-githubactions-plain colored" }
+      ],
       "link": "View In Github",
-      "url": "https://github.com/LautaroPavanSarquis/Practice-CRUD---Agenda-Contactos"
+      "url": "https://github.com/LautaroPavanSarquis/Bazar-API",
+      "deployUrl": "https://bazar-api-gamma.vercel.app/"
     },
     {
       "id": "2",
+      "src": "./img/paylink-manager.png",
+      "title": {
+        "es": "Paylink Manager",
+        "en": "Paylink Manager"
+      },
+      "description": {
+        "es": "Gestor de links de pago. Un comercio crea links con nombre, monto y descripción. Cada link tiene su propia página pública de checkout donde el comprador puede pagar (simulado). Desarrollado con Next.js 16 App Router, MongoDB Atlas y Tailwind CSS v4.",
+        "en": "Payment link manager. A business creates links with name, amount, and description. Each link has its own public checkout page where the buyer can pay (simulated). Built with Next.js 16 App Router, MongoDB Atlas, and Tailwind CSS v4."
+      },
+      "tags": ["Next.js", "TypeScript", "Frontend", "Full Stack"],
+      "techIcons": [
+        { "label": "Next.js", "icon": "devicon-nextjs-plain" },
+        { "label": "TypeScript", "icon": "devicon-typescript-plain colored" },
+        { "label": "MongoDB", "icon": "devicon-mongodb-plain colored" },
+        { "label": "Tailwind CSS", "icon": "devicon-tailwindcss-plain colored" }
+      ],
+      "link": "View In Github",
+      "url": "https://github.com/LautaroPavanSarquis/paylink-manager",
+      "deployUrl": "https://paylink-manager.vercel.app/"
+    },
+    {
+      "id": "3",
       "src": "./img/mokepon.png",
       "title": {
         "es": "MOKEPON !",
@@ -25,11 +56,41 @@
         "es": "Pequeño juego web desarrollado con HTML, CSS y JavaScript, que permite interactuar con personajes, manejar eventos dinámicos y aplicar lógica de programación y manipulación del DOM.",
         "en": "Small interactive web game developed with HTML, CSS, and JavaScript, allowing players to interact with characters, handle dynamic events, and apply programming logic and DOM manipulation."
       },
+      "tags": ["JavaScript", "Frontend"],
+      "techIcons": [
+        { "label": "JavaScript", "icon": "devicon-javascript-plain colored" },
+        { "label": "HTML5", "icon": "devicon-html5-plain colored" },
+        { "label": "CSS3", "icon": "devicon-css3-plain colored" }
+      ],
       "link": "View In Github",
-      "url": "https://github.com/LautaroPavanSarquis/Mokepon"
+      "url": "https://github.com/LautaroPavanSarquis/Mokepon",
+      "deployUrl": null
+    }
+    ,
+    {
+      "id": "4",
+      "src": "./img/agenda-contactos.png",
+      "title": {
+        "es": "Agenda de Contactos",
+        "en": "Contact Agenda"
+      },
+      "description": {
+        "es": "Aplicación web para gestionar contactos, desarrollada con ASP.NET Core 8 y Entity Framework Core. Implementa un CRUD completo con validaciones en cliente y servidor, aplicando el patrón MVC y control de versiones con Git.",
+        "en": "Web application to manage contacts, built with ASP.NET Core 8 and Entity Framework Core. Implements a full CRUD with client and server validations, following the MVC pattern and version control with Git."
+      },
+      "tags": ["C#", ".NET", "SQL", "Backend"],
+      "techIcons": [
+        { "label": "C#", "icon": "devicon-csharp-plain colored" },
+        { "label": ".NET", "icon": "devicon-dot-net-plain colored" },
+        { "label": "SQL Server", "icon": "devicon-microsoftsqlserver-plain colored" },
+        { "label": "Git", "icon": "devicon-git-plain colored" }
+      ],
+      "link": "View In Github",
+      "url": "https://github.com/LautaroPavanSarquis/Practice-CRUD---Agenda-Contactos",
+      "deployUrl": null
     },
     {
-      "id": "3",
+      "id": "5",
       "src": "./img/challenge-hub.png",
       "title": {
         "es": "Challenge Hub",
@@ -39,8 +100,15 @@
         "es": "Repositorio dedicado a la resolución de challenges y ejercicios de algoritmia de plataformas como LeetCode, HackerRank y más. Incluye soluciones en C#, SQL y otros lenguajes, con un enfoque en optimización y buenas prácticas.",
         "en": "Repository dedicated to solving algorithmic challenges and exercises from platforms like LeetCode, HackerRank, and more. Includes solutions in C#, SQL, and other languages, focusing on optimization and best practices."
       },
+      "tags": ["C#", "SQL", "Algorithms"],
+      "techIcons": [
+        { "label": "C#", "icon": "devicon-csharp-plain colored" },
+        { "label": "MySQL", "icon": "devicon-mysql-plain colored" },
+        { "label": "Git", "icon": "devicon-git-plain colored" }
+      ],
       "link": "View In Github",
-      "url": "https://github.com/LautaroPavanSarquis/challenge-hub"
+      "url": "https://github.com/LautaroPavanSarquis/challenge-hub",
+      "deployUrl": null
     }
   ]
 }

@@ -498,6 +498,516 @@ h3{
   stroke: #006b6a;
 }
 
+/* =============================================
+   PORTFOLIO — TAG FILTER
+   ============================================= */
+
+.portfolio--tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+
+.portfolio--tag-btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: 1.5px solid var(--primary);
+  background: transparent;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.portfolio--tag-btn:hover {
+  background-color: var(--primary);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.portfolio--tag-btn.active {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+/* =============================================
+   PORTFOLIO — TECH ICONS WITH TOOLTIP
+   ============================================= */
+
+.portfolio--tech--icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.portfolio--tech--icon--wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio--tech--icon {
+  font-size: 26px;
+  transition: transform 0.2s ease;
+  cursor: default;
+}
+
+/* Next.js icon is black — make it visible in dark mode */
+#dark .devicon-nextjs-plain {
+  color: #ffffff;
+}
+
+.portfolio--tech--icon--wrapper:hover .portfolio--tech--icon {
+  transform: scale(1.2);
+}
+
+/* Tooltip */
+.portfolio--tech--tooltip {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--darkblue);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  z-index: 10;
+}
+
+/* Small arrow under tooltip */
+.portfolio--tech--tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 4px solid transparent;
+  border-top-color: var(--darkblue);
+}
+
+.portfolio--tech--icon--wrapper:hover .portfolio--tech--tooltip {
+  opacity: 1;
+}
+/* =============================================
+   PORTFOLIO — TAG FILTER
+   ============================================= */
+
+.portfolio--tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+
+.portfolio--tag-btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: 1.5px solid var(--primary);
+  background: transparent;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.portfolio--tag-btn:hover {
+  background-color: var(--primary);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.portfolio--tag-btn.active {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+/* =============================================
+   PORTFOLIO — TECH ICONS WITH TOOLTIP
+   ============================================= */
+
+.portfolio--tech--icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.portfolio--tech--icon--wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio--tech--icon {
+  font-size: 26px;
+  transition: transform 0.2s ease;
+  cursor: default;
+}
+
+/* Next.js icon is black — make it visible in dark mode */
+#dark .devicon-nextjs-plain {
+  color: #ffffff;
+}
+
+.portfolio--tech--icon--wrapper:hover .portfolio--tech--icon {
+  transform: scale(1.2);
+}
+
+/* Tooltip */
+.portfolio--tech--tooltip {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--darkblue);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  z-index: 10;
+}
+
+/* Small arrow under tooltip */
+.portfolio--tech--tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 4px solid transparent;
+  border-top-color: var(--darkblue);
+}
+
+.portfolio--tech--icon--wrapper:hover .portfolio--tech--tooltip {
+  opacity: 1;
+}
+
+/* =============================================
+   PORTFOLIO — TAG FILTER
+   ============================================= */
+
+.portfolio--tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+
+.portfolio--tag-btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: 1.5px solid var(--primary);
+  background: transparent;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.portfolio--tag-btn:hover {
+  background-color: var(--primary);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.portfolio--tag-btn.active {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+/*    PORTFOLIO — CARD FIXED SIZE */
+
+/* All cards in the row share the same height */
+.portfolio--section--container {
+  align-items: stretch; /* overrides any previous align-items: center */
+}
+
+.portfolio--section--card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  min-width: 0;
+  /* Fixed total card height — adjust this value to your taste */
+  height: 700px;
+}
+
+/* Fixed-height image container — image fills it, cropped if needed */
+.portfolio--section--img--fixed {
+  height: 400px;
+  min-height: 200px;
+  overflow: hidden;
+  background-color: var(--bg-shade); /* placeholder bg when no image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* Card content fills the remaining height */
+.portfolio--section--card--content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 24px 32px 28px;
+  gap: 0;
+  overflow: hidden;
+}
+
+/* Description area: grows to fill space, clips if too long */
+.portfolio--card--body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.portfolio--card--body .text-md {
+  /* Clamp description to 4 lines max so it never pushes footer out */
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Footer: links + icons, always pinned to bottom of card */
+.portfolio--card--footer {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-top: 20px;
+  flex-shrink: 0;
+}
+
+/*    PORTFOLIO — LINKS ROW  */
+
+.portfolio--links--row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.portfolio--link--deploy {
+  border-bottom-color: var(--darkblue);
+  color: var(--text-color);
+}
+
+#dark .portfolio--link--deploy {
+  border-bottom-color: var(--white);
+}
+
+/*  PORTFOLIO — TECH ICONS WITH TOOLTIP  */
+
+.portfolio--tech--icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.portfolio--tech--icon--wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio--tech--icon {
+  font-size: 26px;
+  transition: transform 0.2s ease;
+  cursor: default;
+}
+
+/* Next.js icon is black by default — invert in dark mode */
+#dark .devicon-nextjs-plain {
+  color: #ffffff;
+}
+
+.portfolio--tech--icon--wrapper:hover .portfolio--tech--icon {
+  transform: scale(1.2);
+}
+
+/* Tooltip */
+.portfolio--tech--tooltip {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--darkblue);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  z-index: 10;
+}
+
+.portfolio--tech--tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 4px solid transparent;
+  border-top-color: var(--darkblue);
+}
+
+.portfolio--tech--icon--wrapper:hover .portfolio--tech--tooltip {
+  opacity: 1;
+}
+
+/*  PORTFOLIO — CAROUSEL  */
+
+.portfolio--carousel--wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.portfolio--carousel--arrow {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid var(--primary);
+  background: transparent;
+  color: var(--primary);
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease, transform 0.15s ease;
+}
+
+.portfolio--carousel--arrow:hover:not(:disabled) {
+  background-color: var(--primary);
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.portfolio--carousel--arrow:disabled {
+  opacity: 0.25;
+  cursor: not-allowed;
+}
+
+.portfolio--carousel--track {
+  flex: 1;
+  min-width: 0;
+}
+
+@keyframes slideInFromRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideOutToLeft {
+  from { opacity: 1; transform: translateX(0); }
+  to   { opacity: 0; transform: translateX(-40px); }
+}
+
+@keyframes slideOutToRight {
+  from { opacity: 1; transform: translateX(0); }
+  to   { opacity: 0; transform: translateX(40px); }
+}
+
+.portfolio--carousel--track.slide-in {
+  animation: slideInFromRight 0.3s ease forwards;
+}
+
+.portfolio--carousel--track.slide-out-left {
+  animation: slideOutToLeft 0.3s ease forwards;
+}
+
+.portfolio--carousel--track.slide-out-right {
+  animation: slideOutToRight 0.3s ease forwards;
+}
+
+/* Dots */
+.portfolio--dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding-top: 8px;
+}
+
+.portfolio--dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--grey);
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  padding: 0;
+}
+
+.portfolio--dot.active {
+  background-color: var(--primary);
+  transform: scale(1.3);
+}
+
+/* Empty state */
+.portfolio--empty {
+  width: 100%;
+  text-align: center;
+  padding: 60px 0;
+  opacity: 0.6;
+}
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+
+@media only screen and (max-width: 1200px) {
+  .portfolio--carousel--wrapper {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .portfolio--carousel--arrow {
+    display: none;
+  }
+
+  .portfolio--tags {
+    justify-content: center;
+  }
+
+  /* On mobile cards stack, so fixed height can be auto */
+  .portfolio--section--card {
+    height: auto;
+    min-height: 520px;
+  }
+}
+
+
 /* Portfolio Ends */
 
 /* Contact Me starts */ 
