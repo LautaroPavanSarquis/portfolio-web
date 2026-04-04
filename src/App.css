@@ -740,15 +740,15 @@ h3{
 
 /* All cards in the row share the same height */
 .portfolio--section--container {
-  align-items: stretch; /* overrides any previous align-items: center */
+  align-items: center; 
 }
 
 .portfolio--section--card {
   display: flex;
   flex-direction: column;
-  flex: 1 1 0;
-  min-width: 0;
-  /* Fixed total card height — adjust this value to your taste */
+
+  flex: 1 1 200px;   
+  max-width: 500px;  
   height: 700px;
 }
 
@@ -982,9 +982,7 @@ h3{
   opacity: 0.6;
 }
 
-/* =============================================
-   RESPONSIVE
-   ============================================= */
+/*   RESPONSIVE  */
 
 @media only screen and (max-width: 1200px) {
   .portfolio--carousel--wrapper {
