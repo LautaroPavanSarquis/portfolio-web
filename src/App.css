@@ -737,26 +737,42 @@ h3{
   color: #fff;
 }
 
-/*    PORTFOLIO — CARD FIXED SIZE */
+/* Botón para expandir/colapsar los filtros restantes: mismo look que los
+   demás tags pero con borde punteado, para que se note que no es un filtro
+   sino un toggle. Así la lista no crece sin control a medida que se agregan
+   proyectos con nuevos tags. */
+.portfolio--tag-btn--more {
+  border-style: dashed;
+  opacity: 0.85;
+}
 
-/* All cards in the row share the same height */
+.portfolio--tag-btn--more:hover {
+  opacity: 1;
+}
+
+/*    PORTFOLIO — CARD ADAPTIVE SIZE */
+
+/* Todas las cards de una misma fila se estiran a la altura de la más alta,
+   así el layout queda parejo sin importar cuánto texto tenga cada proyecto. */
 .portfolio--section--container {
-  align-items: center; 
+  align-items: stretch;
 }
 
 .portfolio--section--card {
   display: flex;
   flex-direction: column;
 
-  flex: 1 1 200px;   
-  max-width: 500px;  
-  height: 700px;
+  flex: 1 1 280px;
+  max-width: 500px;
+  height: auto; /* la altura la define el contenido, no un valor fijo */
 }
 
-/* Fixed-height image container — image fills it, cropped if needed */
+/* Contenedor de imagen con proporción fija: la imagen siempre se ve completa
+   y sin deformarse, sea cual sea su tamaño original. */
 .portfolio--section--img--fixed {
-  height: 400px;
-  min-height: 200px;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  min-height: 180px;
   overflow: hidden;
   background-color: var(--bg-shade); /* placeholder bg when no image */
   display: flex;
@@ -764,33 +780,28 @@ h3{
   justify-content: center;
 }
 
+.portfolio--section--img--fixed img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
-
-/* Card content fills the remaining height */
+/* Card content crece con el texto que necesite */
 .portfolio--section--card--content {
   display: flex;
   flex-direction: column;
   flex: 1;
   padding: 24px 32px 28px;
   gap: 0;
-  overflow: hidden;
 }
 
-/* Description area: grows to fill space, clips if too long */
+/* Descripción: se muestra completa, sin recortes ni clamps */
 .portfolio--card--body {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  overflow: hidden;
-}
-
-.portfolio--card--body .text-md {
-  /* Clamp description to 4 lines max so it never pushes footer out */
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 
 /* Footer: links + icons, always pinned to bottom of card */

@@ -4,17 +4,29 @@ import data from "../../Data/index.json";
 
 const CARDS_PER_PAGE = 3;
 
+// Filtros que siempre están visibles, en este orden.
+const PRIORITY_TAGS = ["Backend", "Frontend", "Java", "REST API", "JavaScript"];
+
 export default function MyPortfolio() {
   const { lang } = useContext(LanguageContext);
   const [activeTag, setActiveTag] = useState("All");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
   const [direction, setDirection] = useState(null);
+  const [showMoreTags, setShowMoreTags] = useState(false);
 
-  const allTags = [
-    "All",
-    ...Array.from(new Set(data.portfolio.flatMap((p) => p.tags || []))),
-  ];
+  const allProjectTags = Array.from(
+    new Set(data.portfolio.flatMap((p) => p.tags || []))
+  );
+
+  // Filtros "fijos" (solo los que realmente existen entre los proyectos),
+  // en el orden pedido. El resto queda oculto detrás de "Más filtros +".
+  const priorityTags = PRIORITY_TAGS.filter((tag) => allProjectTags.includes(tag));
+  const extraTags = allProjectTags.filter((tag) => !PRIORITY_TAGS.includes(tag));
+
+  const visibleTags = showMoreTags
+    ? ["All", ...priorityTags, ...extraTags]
+    : ["All", ...priorityTags];
 
   const filtered =
     activeTag === "All"
@@ -102,7 +114,7 @@ export default function MyPortfolio() {
 
       {/* Tag Filter */}
       <div className="portfolio--tags">
-        {allTags.map((tag) => (
+        {visibleTags.map((tag) => (
           <button
             key={tag}
             className={`portfolio--tag-btn ${activeTag === tag ? "active" : ""}`}
@@ -111,6 +123,23 @@ export default function MyPortfolio() {
             {tag}
           </button>
         ))}
+
+        {extraTags.length > 0 && (
+          <button
+            type="button"
+            className="portfolio--tag-btn portfolio--tag-btn--more"
+            onClick={() => setShowMoreTags((prev) => !prev)}
+            aria-expanded={showMoreTags}
+          >
+            {showMoreTags
+              ? lang === "es"
+                ? "Menos filtros −"
+                : "Less filters −"
+              : lang === "es"
+              ? "Más filtros +"
+              : "More filters +"}
+          </button>
+        )}
       </div>
 
       {/* Carousel */}
